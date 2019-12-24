@@ -6,8 +6,6 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/core/sdk AS build
 WORKDIR /project
 COPY  ["/", "/project"]
-# WORKDIR /project/Osn.Payment.Facade/Web/Osn.Payment.Facade.Web/
-# RUN curl http://google.com
 
 // add Path for project
 RUN dotnet restore "*.csproj"

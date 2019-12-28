@@ -1,0 +1,2 @@
+FROM amazonlinux as base
+RUN yum groupinstall -y "Development Tools"

@@ -12,3 +12,4 @@ There are following docker files available
 | Python                | Application   |               |
 | dotnet core           | Application   |               |
 | nodejs                | Application   |               |
+| reactjs               | Application   |               |

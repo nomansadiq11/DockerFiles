@@ -1,0 +1,12 @@
+FROM ubuntu:latest
+
+RUN apt-get update && apt-get upgrade -y
+
+RUN apt-get install curl -y
+
+RUN apt-get install -y vim-tiny
+
+RUN curl -sL https://cnfl.io/cli | sh -s -- latest -b /usr/local/bin
+
+RUN curl -L --http1.1 https://cnfl.io/ccloud-cli | sh -s -- -b /usr/local/bin
+
